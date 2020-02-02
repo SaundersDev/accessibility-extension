@@ -10,5 +10,11 @@ chrome.webNavigation.onCompleted.addListener(function() {
         chrome.tabs.executeScript(null, { file: "js/jquery-3.4.1.min.js" }, function() {
             chrome.tabs.executeScript(null, { file : data.contentscript });
         });
+        chrome.tabs.executeScript(null, { file: "js/gifplayer.js" }, function() {
+            chrome.tabs.executeScript(null, { file : data.contentscript });
+        });
+        chrome.tabs.executeScript(null, { file: "js/caman.full.js" }, function() {
+            chrome.tabs.executeScript(null, { file : data.contentscript });
+        });
     });
 });
